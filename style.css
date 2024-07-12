@@ -1,13 +1,16 @@
 .cleander-section{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    row-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
 .cleander-container{
     display: grid;
     grid-template-columns: repeat(7,1fr);
-    gap: 5px;
-    width: 500px;
+    row-gap: 7px;
+    width: 350px;
+    background-color: #343434;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 .month-name{
     font-weight: 800;
@@ -16,8 +19,8 @@
     color: blueviolet;
 }
 .cleander-box{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 5px;
     background-color: beige;
     display: flex;
@@ -41,6 +44,10 @@
         grid-template-columns: repeat(1,1fr);
     }
     .cleander-container{
-        width: 420px;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .month-name{
+        margin-left: 20px;
     }
 }
