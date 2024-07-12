@@ -1,3 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 8px;
+    width: 680px;
+    margin: 10px auto;
+}
+
 .cleander-section{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -40,14 +53,19 @@
 }
 
 @media screen and (max-width:576px) {
+    h1{
+        width: 350px;
+        font-size: 25px;
+        text-align: center;
+    }
     .cleander-section{
         grid-template-columns: repeat(1,1fr);
     }
     .cleander-container{
-        width: 400px;
+        width: 350px;
         margin: 0 auto;
     }
     .month-name{
-        margin-left: 20px;
+        margin-left: 50px;
     }
 }
