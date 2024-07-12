@@ -1,0 +1,46 @@
+.cleander-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+}
+.cleander-container{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+    width: 500px;
+}
+.month-name{
+    font-weight: 800;
+    font-size: 26px;
+    padding:10px 10px 10px 0px;
+    color: blueviolet;
+}
+.cleander-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.day-box{
+    background-color: aquamarine;
+    font-weight: 800;
+}
+.cleander-container .fri-day{
+    background-color: brown;
+    color: aliceblue;
+}
+.cleander-container .blank-box{
+    background-color: transparent;
+}
+
+@media screen and (max-width:576px) {
+    .cleander-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cleander-container{
+        width: 420px;
+    }
+}
